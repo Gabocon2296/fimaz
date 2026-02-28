@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-colors duration-200;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased;
+}
+
+/* Accesibilidad */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-primary-500;
+}
+
+/* Tipografía */
+h1 {
+  @apply text-4xl font-bold tracking-tight;
+}
+
+h2 {
+  @apply text-3xl font-bold tracking-tight;
+}
+
+h3 {
+  @apply text-2xl font-semibold;
+}
+
+p {
+  @apply leading-relaxed;
+}
