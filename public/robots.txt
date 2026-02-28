@@ -1,0 +1,38 @@
+# ROBOTS.TXT - Control de indexación y rastreo
+# Más información: https://www.robotstxt.org/
+
+# Permitir a todos los bots
+User-agent: *
+Allow: /
+
+# Rutas excluidas de indexación
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Crawl-delay para respetar recursos del servidor
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://fimaz.uas.edu.mx/sitemap.xml
+Sitemap: https://fimaz.uas.edu.mx/sitemap-programs.xml
+Sitemap: https://fimaz.uas.edu.mx/sitemap-news.xml
+
+# Desindexar idiomas no soportados
+User-agent: *
+Disallow: /en/
+Disallow: /pt/
+
+# Bloquear bots maliciosos conocidos
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 10
